@@ -30,6 +30,12 @@ nav {
 Add a threshold ("break point") when
 the width of the viewport is 600px or greater. 
 */
+
+/*
+You can query for lots and lots of things.
+I recommend keeping it (very) simple.
+But you can read about other options here: https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries
+*/
 @media screen and (min-width: 600px) {
   h1 {
     border: 5px dotted blue;
