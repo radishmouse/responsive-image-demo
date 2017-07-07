@@ -24,7 +24,7 @@ html {
 
 
 /* media query for larger, high density displays */
-@media screen and (min-width: 900px) and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
 /* High density stuff here */
   .cover-image {
     background-image: url(../images/tiger2x.jpg);
