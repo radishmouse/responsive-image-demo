@@ -8,7 +8,7 @@ html {
 
 .cover-image {
   /* Image URLs are relative to the CSS file! */
-  background-image: url(../images/tiger.jpg);
+  background-image: url(../images/tiger-small.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -17,13 +17,14 @@ html {
 
 @media screen and (min-width: 600px) {
   .cover-image {
+    background-image: url(../images/tiger.jpg);
     height: 700px;    
   }
 }
 
 
-/* media query for high density displays */
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+/* media query for larger, high density displays */
+@media screen and (min-width: 900px) and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
 /* High density stuff here */
   .cover-image {
     background-image: url(../images/tiger2x.jpg);
