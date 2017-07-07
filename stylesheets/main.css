@@ -1,0 +1,55 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+/*
+
+Default styles, loaded regardless of media queries.
+These should be developed first for small (phone-sized) screens.
+*/
+
+
+html {
+  font-size: 10px; /* base any rem sizing off of 10px */
+}
+
+h1 {
+  border: 1px solid red;
+}
+
+nav {
+  display: none;
+}
+
+/* 
+Add a threshold ("break point") when
+the width of the viewport is 600px or greater. 
+*/
+@media screen and (min-width: 600px) {
+  h1 {
+    border: 5px dotted blue;
+  }
+  nav {
+    display: block;
+    font-size: 3rem;
+  }
+}
+
+/* 
+Add a threshold ("break point") when
+the width of the viewport is 900px or greater. 
+*/
+@media screen and (min-width: 900px) {
+  h1 {
+    border: 15px solid green;
+  }
+  nav {
+    color: red;
+    font-size: 1.5rem;
+  }
+}
